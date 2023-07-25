@@ -11,32 +11,38 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btnCapture"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:text="Capture"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rec"
+        android:backgroundTint="@color/white"
+        android:contentDescription="Capture"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btnSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:background="@drawable/swap"
+        android:backgroundTint="@color/white"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
         android:layout_marginBottom="32dp"
-        android:text="Switch"
+        android:contentDescription="Switch"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnCapture" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btnGallery"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:background="@drawable/picture"
+        android:backgroundTint="@color/white"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
         android:layout_marginBottom="32dp"
-        android:text="Gallery"
+        android:contentDescription="Gallery"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnCapture"
         app:layout_constraintStart_toStartOf="parent" />
